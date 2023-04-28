@@ -24,5 +24,6 @@ class HelloControllerTest {
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())  // isok 메소드는 http 200인지 확인
                 .andExpect(content().string("hello"));
+
     }
 }
